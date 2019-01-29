@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="m01_2019.Sprint1.Tests">
+        <methods>
+          <include name="TC01_Login"/>
+          <include name="teardown"/>
+          <include name="TC01_Login2"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- m01_2019.Sprint1.Tests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

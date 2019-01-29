@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10041" started-at="2019-01-28T22:52:15Z" finished-at="2019-01-28T22:52:25Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="10041" started-at="2019-01-28T22:52:15Z" finished-at="2019-01-28T22:52:25Z">
+      <class name="m01_2019.Sprint1.Tests">
+        <test-method status="PASS" signature="Setup(org.testng.ITestContext)[pri:0, instance:m01_2019.Sprint1.Tests@1a968a59]" name="Setup" is-config="true" duration-ms="40" started-at="2019-01-28T17:52:15Z" finished-at="2019-01-28T17:52:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f7030a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="TC02_Login2()[pri:0, instance:m01_2019.Sprint1.Tests@1a968a59]" name="TC02_Login2" duration-ms="7065" started-at="2019-01-28T17:52:15Z" finished-at="2019-01-28T17:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_Login2 -->
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@1a968a59]" name="TC01_Login" duration-ms="4871" started-at="2019-01-28T17:52:15Z" data-provider="Dataset" finished-at="2019-01-28T17:52:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.user1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vijimol@27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_Login -->
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@1a968a59]" name="TC01_Login" duration-ms="4635" started-at="2019-01-28T17:52:15Z" data-provider="Dataset" finished-at="2019-01-28T17:52:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.user2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vijimol@27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_Login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:m01_2019.Sprint1.Tests@1a968a59]" name="teardown" is-config="true" duration-ms="1" started-at="2019-01-28T17:52:25Z" finished-at="2019-01-28T17:52:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- m01_2019.Sprint1.Tests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
