@@ -8,8 +8,8 @@
         <methods>
           <include name="TC01_Login"/>
           <include name="teardown"/>
-          <include name="TC01_Login2"/>
           <include name="Setup"/>
+          <include name="TC02_Login2"/>
         </methods>
       </class> <!-- m01_2019.Sprint1.Tests -->
     </classes>

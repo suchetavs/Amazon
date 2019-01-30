@@ -2,43 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12444" started-at="2019-01-29T02:00:48Z" finished-at="2019-01-29T02:01:00Z">
+  <suite name="Suite" duration-ms="13088" started-at="2019-01-30T06:12:22Z" finished-at="2019-01-30T06:12:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12444" started-at="2019-01-29T02:00:48Z" finished-at="2019-01-29T02:01:00Z">
+    <test name="Test" duration-ms="13088" started-at="2019-01-30T06:12:22Z" finished-at="2019-01-30T06:12:35Z">
       <class name="m01_2019.Sprint1.Tests">
-        <test-method status="PASS" signature="Setup(org.testng.ITestContext)[pri:0, instance:m01_2019.Sprint1.Tests@2c9f9fb0]" name="Setup" is-config="true" duration-ms="9" started-at="2019-01-28T21:00:48Z" finished-at="2019-01-28T21:00:48Z">
+        <test-method status="PASS" signature="Setup(org.testng.ITestContext)[pri:0, instance:m01_2019.Sprint1.Tests@26f67b76]" name="Setup" is-config="true" duration-ms="45" started-at="2019-01-30T01:12:22Z" finished-at="2019-01-30T01:12:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@49993335]]>
+                <![CDATA[org.testng.TestRunner@6af93788]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="TC02_Login2()[pri:0, instance:m01_2019.Sprint1.Tests@2c9f9fb0]" name="TC02_Login2" duration-ms="9799" started-at="2019-01-28T21:00:48Z" finished-at="2019-01-28T21:00:57Z">
+        <test-method status="PASS" signature="TC02_Login2()[pri:0, instance:m01_2019.Sprint1.Tests@26f67b76]" name="TC02_Login2" duration-ms="10144" started-at="2019-01-30T01:12:22Z" finished-at="2019-01-30T01:12:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_Login2 -->
-        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@2c9f9fb0]" name="TC01_Login" duration-ms="7727" started-at="2019-01-28T21:00:48Z" data-provider="Dataset" finished-at="2019-01-28T21:00:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testng.user2@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[vijimol@27]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC01_Login -->
-        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@2c9f9fb0]" name="TC01_Login" duration-ms="7727" started-at="2019-01-28T21:00:48Z" data-provider="Dataset" finished-at="2019-01-28T21:00:56Z">
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@26f67b76]" name="TC01_Login" duration-ms="6430" started-at="2019-01-30T01:12:23Z" data-provider="Dataset" finished-at="2019-01-30T01:12:29Z">
           <params>
             <param index="0">
               <value>
@@ -54,7 +38,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_Login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:m01_2019.Sprint1.Tests@2c9f9fb0]" name="teardown" is-config="true" duration-ms="1" started-at="2019-01-28T21:01:00Z" finished-at="2019-01-28T21:01:00Z">
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@26f67b76]" name="TC01_Login" duration-ms="6334" started-at="2019-01-30T01:12:23Z" data-provider="Dataset" finished-at="2019-01-30T01:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.user2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vijimol@27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_Login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:m01_2019.Sprint1.Tests@26f67b76]" name="teardown" is-config="true" duration-ms="0" started-at="2019-01-30T01:12:35Z" finished-at="2019-01-30T01:12:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

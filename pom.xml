@@ -30,6 +30,7 @@
            
         </configuration>
         </plugin>
+        
         </plugins>
 	</build>
 	
@@ -62,5 +63,19 @@
         <artifactId>selenium-java</artifactId>
         <version>3.141.59</version>
     </dependency> 
+    <dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
+</dependency>
   </dependencies>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>javancss-maven-plugin</artifactId>
+        <version>2.1</version>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>

@@ -11,7 +11,7 @@ import Factories.DataConfigurationClass;
 import Factories.DriverFactory;
 import PageFiles.PageObjects;
 
-@Listeners({packageListeners.Beforesuite.class,packageListeners.MethodListener.class})
+@Listeners({packageListeners.Beforesuite.class,packageListeners.MethodListener.class,packageListeners.ExtendReportListener.class})
 public class Tests extends DataConfigurationClass{
 	
 //	private static DataConfigurationClass config;

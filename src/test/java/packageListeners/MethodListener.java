@@ -18,7 +18,7 @@ import PageFiles.PageObjects;
 import m01_2019.Sprint1.Tests;
 
 public class MethodListener implements IInvokedMethodListener{
-	
+	int i=0;
 		
 	@Override
 	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
@@ -43,20 +43,17 @@ public class MethodListener implements IInvokedMethodListener{
 				{
 				takeScreenshot(method);
 	        
-	        }
+				}
 			DriverFactory.getinstance().getDriver().get().close();// TODO Auto-generated method stub
 		}
 	}
 	
 	public void takeScreenshot(IInvokedMethod method) {
+		i++;
 		File scrFile,destFile;
 		String filename=method.toString().substring(0, 11);
-		String path="./test-output/Screenshots/"+filename;
+		String path="./test-output/Screenshots/"+filename+i;
 		System.out.println(path);
-		
-		System.out.println("PArameter invocation count "+method.getTestMethod().getXmlTest().getParameter("username"));
-		System.out.println("current invoc count "+method.getTestMethod().getCurrentInvocationCount());
-		System.out.println("current instance "+method.getTestMethod().getInstance());
 		
 		scrFile = ((TakesScreenshot)DriverFactory.getinstance().getDriver().get()).getScreenshotAs(OutputType.FILE);
 		new File(path).mkdir();
