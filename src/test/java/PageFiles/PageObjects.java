@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Factories.DriverFactory;
+import configuration.DriverFactory;
 
 
 public class PageObjects {

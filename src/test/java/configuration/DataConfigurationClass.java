@@ -1,4 +1,4 @@
-package Factories;
+package configuration;
 import java.lang.reflect.Method;
 
 import org.testng.ITestContext;

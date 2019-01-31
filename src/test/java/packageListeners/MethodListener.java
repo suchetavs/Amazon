@@ -6,15 +6,12 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
-import com.beust.jcommander.converters.PathConverter;
-
-import Factories.DriverFactory;
 import PageFiles.PageObjects;
+import configuration.DriverFactory;
 import m01_2019.Sprint1.Tests;
 
 public class MethodListener implements IInvokedMethodListener{
