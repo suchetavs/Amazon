@@ -1,12 +1,17 @@
 package m01_2019.Sprint1;
 
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
-import PageFiles.PageObjects;
+import PageFiles.*;
 import configuration.DataConfigurationClass;
 import configuration.DriverFactory;
 
@@ -14,50 +19,33 @@ import configuration.DriverFactory;
 public class Tests extends DataConfigurationClass{
 	
 //	private static DataConfigurationClass config;
-	public static ThreadLocal<PageObjects> pageobject=new ThreadLocal<>();
+	
 	Logger log=Logger.getLogger(Tests.class);
 
-	
-			
-	/*Configure DataSheet Access
-	@BeforeSuite
-	public void Setup(ITestContext context) {
-		System.out.println("in beforesuite");
-	//	config=new DataConfigurationClass();
-		
-							
-	}*/
 	
 	
 	
 	@Test(dataProvider="Dataset",dataProviderClass=configuration.DataConfigurationClass.class)
 	public void TC01_Login(String username,String password) {
-		//System.out.println("In test");
-		//System.out.println("");
-		System.out.println(username);
-		System.out.println(password);
-		log.info("First test");
-		log.warn("Dont do");
-		log.fatal("nahiiiii");
-		DriverFactory.getinstance().getDriver().get().get("https://www.google.com");
-		System.out.println("In TC01 method from factory "+Thread.currentThread()+DriverFactory.getinstance().getDriver().get());
-		//System.out.println("In TC01 method from driver "+Thread.currentThread()+driver.get());
-		
-		System.out.println("\n");
+		pageobject.get().login();
+		WebElement[] elements=signinpage.get().login();
+		elements[0].sendKeys(username);
+		elements[1].sendKeys(password);
+		elements[2].click();
+		pageobject.get().scrolldown();
 	}
 		
 	
 	@Test
-	public void TC02_Login2() {
-		DriverFactory.getinstance().getDriver().get().get("https://www.amazon.com");
-		pageobject.get().login();
+	public void recaptcha() {
+		System.out.println("Entered recpata");
+		DriverFactory.getinstance().getDriver().get().get("https://www.chegg.com");
 		
-		System.out.println("In TC02 method from factory"+Thread.currentThread()+DriverFactory.getinstance().getDriver().get());
-		//System.out.println("In TC02 method from driver"+Thread.currentThread()+driver.get());
-		System.out.println("\n");
-	
-	
+		chegg.get().forgotpassword();
 	}
+	
+	
+	
 	
 		
 	@AfterTest

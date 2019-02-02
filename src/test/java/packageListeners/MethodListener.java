@@ -10,7 +10,7 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
-import PageFiles.PageObjects;
+import PageFiles.*;
 import configuration.DriverFactory;
 import m01_2019.Sprint1.Tests;
 
@@ -19,14 +19,17 @@ public class MethodListener implements IInvokedMethodListener{
 		
 	@Override
 	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
-		System.out.println("IN before listner");
+		System.out.println("IN before listner "+method.getTestMethod().toString());
 		if(method.isTestMethod()) {
 		if(method.getTestMethod().getXmlTest().getParameter("browser").equalsIgnoreCase("chrome"))
 			DriverFactory.getinstance().setchromeDriver();
 		else
 			DriverFactory.getinstance().setieDriver();
 		//Tests.driver=DriverFactory.getinstance().getDriver();
-		Tests.pageobject.set(new PageObjects(DriverFactory.getinstance().getDriver()));
+		setPageObjects();
+		DriverFactory.getinstance().getDriver().get().manage().window().maximize();
+		
+		
 		
 	}
 	}
@@ -62,6 +65,14 @@ public class MethodListener implements IInvokedMethodListener{
 			e.printStackTrace();
 		}
 		}
+	
+	
+	public void setPageObjects() {
+		Tests.pageobject.set(new Homepage(DriverFactory.getinstance().getDriver()));
+		Tests.signinpage.set(new SignInPage(DriverFactory.getinstance().getDriver()));
+		Tests.chegg.set(new Chegg(DriverFactory.getinstance().getDriver()));
+
+	}
 		
 	}
 

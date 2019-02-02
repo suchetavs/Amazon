@@ -5,6 +5,7 @@ import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
 
 import DataUtilities.DataUtility;
+import PageFiles.*;
 
 
 public class DataConfigurationClass extends DataUtility{
@@ -14,6 +15,9 @@ public class DataConfigurationClass extends DataUtility{
 	protected static String filepath;
 	protected static int DatasetFieldCount;
 	protected static int DatasetInstanceCount;
+	public static ThreadLocal<Homepage> pageobject=new ThreadLocal<>();
+	public static ThreadLocal<SignInPage> signinpage=new ThreadLocal<>();
+	public static ThreadLocal<Chegg> chegg=new ThreadLocal<>();
 	
 	public DataConfigurationClass() {
 		super(SetDataSheet,FieldDataSheet,filepath,DatasetFieldCount,DatasetInstanceCount);

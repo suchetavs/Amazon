@@ -5,10 +5,8 @@
     <classes>
       <class name="m01_2019.Sprint1.Tests">
         <methods>
-          <include name="TC01_Login"/>
           <include name="teardown"/>
-          <include name="TC01_Login2"/>
-          <include name="Setup"/>
+          <include name="recaptcha"/>
         </methods>
       </class> <!-- m01_2019.Sprint1.Tests -->
     </classes>

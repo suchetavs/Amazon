@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13824" started-at="2019-01-31T03:57:50Z" finished-at="2019-01-31T03:58:04Z">
+  <suite name="Suite" duration-ms="24176" started-at="2019-02-02T21:59:19Z" finished-at="2019-02-02T21:59:44Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13824" started-at="2019-01-31T03:57:50Z" finished-at="2019-01-31T03:58:04Z">
+    <test name="Test" duration-ms="24176" started-at="2019-02-02T21:59:19Z" finished-at="2019-02-02T21:59:44Z">
       <class name="m01_2019.Sprint1.Tests">
-        <test-method status="PASS" signature="TC02_Login2()[pri:0, instance:m01_2019.Sprint1.Tests@2a556333]" name="TC02_Login2" duration-ms="8855" started-at="2019-01-30T22:57:51Z" finished-at="2019-01-30T22:57:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC02_Login2 -->
-        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@2a556333]" name="TC01_Login" duration-ms="5814" started-at="2019-01-30T22:57:51Z" data-provider="Dataset" finished-at="2019-01-30T22:57:57Z">
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="TC01_Login" duration-ms="17865" started-at="2019-02-02T16:59:21Z" data-provider="Dataset" finished-at="2019-02-02T16:59:39Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_Login -->
-        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@2a556333]" name="TC01_Login" duration-ms="5971" started-at="2019-01-30T22:57:51Z" data-provider="Dataset" finished-at="2019-01-30T22:57:57Z">
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="TC01_Login" duration-ms="20216" started-at="2019-02-02T16:59:21Z" data-provider="Dataset" finished-at="2019-02-02T16:59:41Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_Login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:m01_2019.Sprint1.Tests@2a556333]" name="teardown" is-config="true" duration-ms="1" started-at="2019-01-30T22:58:04Z" finished-at="2019-01-30T22:58:04Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="teardown" is-config="true" duration-ms="1" started-at="2019-02-02T16:59:44Z" finished-at="2019-02-02T16:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -36,8 +36,8 @@ public class DriverFactory {
 	   {
 		WebDriverManager.getInstance(CHROME).setup();
 	      driver.set(new ChromeDriver());
-	      System.out.println("Chrome driver newly set in factory "+driver.get()+" Thread "+Thread.currentThread());
-	   }
+	      
+	      }
 	public void setieDriver() // call this method to get the driver object and launch the browser
 	   {
 		WebDriverManager.getInstance(IEXPLORER).setup(); 

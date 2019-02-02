@@ -7,14 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 import configuration.DriverFactory;
 
 
-public class PageObjects {
-	WebDriver driver;
-	@FindBy(className="nav-logo-link")
-	private WebElement logo;
-	@FindBy(id="nav-global-location-slot")
-	private WebElement location;
-	@FindBy(id="twotabsearchtextbox" )
-	private WebElement searchbox;
+public class SignInPage {
+	
+	@FindBy(xpath="//*[@type='email']")
+	private WebElement username;
+	@FindBy(xpath="//*[@type='password']")
+	private WebElement password;
+	@FindBy(id="signInSubmit" )
+	private WebElement submit;
 	@FindBy(xpath="//*[@class='nav-search-dropdown searchSelect']" )
 	private WebElement dd_search;
 	@FindBy(xpath="//input[@class='nav-input'][@value='Go']")
@@ -26,13 +26,19 @@ public class PageObjects {
 	
 	
 	
-	public PageObjects(ThreadLocal<WebDriver> driver) {
+	public SignInPage(ThreadLocal<WebDriver> driver) {
 		PageFactory.initElements(driver.get(), this);
 		
 	}
 	
-	public void login(){
-		signin.click();
+	
+	public WebElement[] login(){
+		WebElement[] loginfields=new WebElement[3];
+		loginfields[0]=username;
+		loginfields[1]=password;
+		loginfields[2]=submit;
+		return loginfields;
+		
 	}
 
 	
