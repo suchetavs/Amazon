@@ -14,6 +14,7 @@ import org.testng.log4testng.Logger;
 import PageFiles.*;
 import configuration.DataConfigurationClass;
 import configuration.DriverFactory;
+import junit.framework.Assert;
 
 @Listeners({packageListeners.Beforesuite.class,packageListeners.MethodListener.class,packageListeners.ExtendReportListener.class})
 public class Tests extends DataConfigurationClass{
@@ -33,6 +34,7 @@ public class Tests extends DataConfigurationClass{
 		elements[1].sendKeys(password);
 		elements[2].click();
 		pageobject.get().scrolldown();
+		Assert.assertEquals(true, false);
 	}
 		
 	

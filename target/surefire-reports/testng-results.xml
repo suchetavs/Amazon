@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24176" started-at="2019-02-02T21:59:19Z" finished-at="2019-02-02T21:59:44Z">
+  <suite name="Suite" duration-ms="20659" started-at="2019-02-02T23:51:28Z" finished-at="2019-02-02T23:51:48Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24176" started-at="2019-02-02T21:59:19Z" finished-at="2019-02-02T21:59:44Z">
+    <test name="Test" duration-ms="20659" started-at="2019-02-02T23:51:28Z" finished-at="2019-02-02T23:51:48Z">
       <class name="m01_2019.Sprint1.Tests">
-        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="TC01_Login" duration-ms="17865" started-at="2019-02-02T16:59:21Z" data-provider="Dataset" finished-at="2019-02-02T16:59:39Z">
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="TC01_Login" duration-ms="15991" started-at="2019-02-02T18:51:28Z" data-provider="Dataset" finished-at="2019-02-02T18:51:44Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_Login -->
-        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="TC01_Login" duration-ms="20216" started-at="2019-02-02T16:59:21Z" data-provider="Dataset" finished-at="2019-02-02T16:59:41Z">
+        <test-method status="PASS" signature="TC01_Login(java.lang.String, java.lang.String)[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="TC01_Login" duration-ms="17657" started-at="2019-02-02T18:51:28Z" data-provider="Dataset" finished-at="2019-02-02T18:51:46Z">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_Login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="teardown" is-config="true" duration-ms="1" started-at="2019-02-02T16:59:44Z" finished-at="2019-02-02T16:59:44Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:m01_2019.Sprint1.Tests@3dfc5fb8]" name="teardown" is-config="true" duration-ms="0" started-at="2019-02-02T18:51:48Z" finished-at="2019-02-02T18:51:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
