@@ -34,6 +34,7 @@ public class Tests extends DataConfigurationClass{
 		elements[1].sendKeys(password);
 		elements[2].click();
 		pageobject.get().scrolldown();
+		System.out.println("check hook");
 		Assert.assertEquals(true, false);
 	}
 		
