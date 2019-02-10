@@ -23,7 +23,10 @@ public class SignInPage {
 	private WebElement caption_pic;
 	@FindBy(xpath="//*[@id='nav-link-accountList']")
 	private WebElement signin;
-	
+	@FindBy(linkText="Images")
+	public WebElement image;
+	@FindBy(css="input.gLFyf.gsfi")
+	public WebElement searchbox;
 	
 	
 	public SignInPage(ThreadLocal<WebDriver> driver) {

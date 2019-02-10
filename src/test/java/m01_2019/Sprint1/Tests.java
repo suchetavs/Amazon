@@ -1,9 +1,18 @@
 package m01_2019.Sprint1;
 
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -41,11 +50,35 @@ public class Tests extends DataConfigurationClass{
 		
 	
 	@Test
-	public void recaptcha() {
-		System.out.println("Entered recpata");
-		DriverFactory.getinstance().getDriver().get().get("https://www.chegg.com");
+	public void recaptcha() throws AWTException, InterruptedException {
+	//	System.out.println("Entered recpata");
+		DriverFactory.getinstance().getDriver().get().get("https://www.amazon.com");
+		/*//pageobject.get().login();
+		pageobject.get().rightclick();
+		//pageobject.get().rightclick();
+		//dd_search.selectByIndex(3);
+		signinpage.get().image.click();
+		signinpage.get().searchbox.sendKeys("sad");
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		//robot.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);		
+		robot.mouseMove(200,600);
+		robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
+		robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
+		Thread.sleep(1000);	
+		robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
+		robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
 		
-		chegg.get().forgotpassword();
+		for(int i=0;i<7;i++)
+		{	robot.keyPress(KeyEvent.VK_DOWN);
+			robot.keyRelease(KeyEvent.VK_DOWN);
+		}
+		robot.keyPress(KeyEvent.VK_ENTER);*/
+		System.out.println(pageobject.get().gettable());
+		//DriverFactory.getinstance().getDriver().get().manage().window
+		
+		
 	}
 	
 	

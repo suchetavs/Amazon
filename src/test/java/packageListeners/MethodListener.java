@@ -44,7 +44,7 @@ public class MethodListener implements IInvokedMethodListener{
 				takeScreenshot(method);
 	        
 				}
-			DriverFactory.getinstance().getDriver().get().close();// TODO Auto-generated method stub
+			//DriverFactory.getinstance().getDriver().get().close();// TODO Auto-generated method stub
 		}
 	}
 	

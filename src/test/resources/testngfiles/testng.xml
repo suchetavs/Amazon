@@ -6,7 +6,7 @@
       <classes>
       <class name="m01_2019.Sprint1.Tests">
       	<methods>
-      		<include name="TC01_Login"></include></methods></class>
+      		<include name="recaptcha"></include></methods></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

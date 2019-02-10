@@ -2,6 +2,7 @@ package configuration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import static io.github.bonigarcia.wdm.DriverManagerType.CHROME;
 import static io.github.bonigarcia.wdm.DriverManagerType.IEXPLORER;
@@ -35,7 +36,9 @@ public class DriverFactory {
 	public void setchromeDriver() // call this method to get the driver object and launch the browser
 	   {
 		WebDriverManager.getInstance(CHROME).setup();
-	      driver.set(new ChromeDriver());
+		ChromeOptions options=new ChromeOptions();
+		options.addArguments("headless");
+	      driver.set(new ChromeDriver(options));
 	      
 	      }
 	public void setieDriver() // call this method to get the driver object and launch the browser
